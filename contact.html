@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <title>Contact</title>
+    <link rel="stylesheet" href="./style.css">
+    <script type="text/javascript" src="bouton.js"></script>
+    </head>
+    <body>
+        <button class="haut" onclick="EnHaut()" id="haut">&uarr;</button>
+        <div class="container">
+            <a href="index.html" class="image"><img src="logo.png"></a>
+            
+            <nav class="container">
+                <ul>
+                    <li><a href="index.html" class="active">Accueil</a></li>
+                    <li><a href="qsn.html">Qui sommes nous ?</a></li>
+                    <li><a href="tissu.html">Tissu</a></li>
+                    <li><a href="store.html">Produits</a></li>
+                    <li><a href="partenariat.html">Partenariats</a></li>
+                    <li><a href="contact.html">Nous contacter</a></li>
+                </ul>
+            </nav>
+            
+            <h2>
+                <br>
+                Pour nous contacter:
+            </h2>
+            <br>
+            <fieldset>
+                <br>
+                <form method="post" action="https://dwarves.iut-fbleau.fr/requete.php" enctype="application/x-www-form-urlencoded">
+                    <p>
+                        <label for="name">Nom</label>
+                        <input type="text" name="nom" id="name" required>
+                    </p>
+                    <br>
+                    <p>
+                        <label for="prenom">Prénom</label>
+                        <input type="text" name="prenom" id="prenom" required>
+                    </p>
+                    <br>
+                    <p>
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" required>
+                    </p>
+                    <br>
+                    <p>
+                        <label for="message">Message</label> <br>
+                        <textarea id="message" class="message" required></textarea>
+                    <br>
+                    <input type="submit" value="Envoyer" class="send">
+                </form>
+            </fieldset>
+        </div>
+        <div class="reseau">
+            <p>
+                Vous pouvez aussi nous contacter via nos réseaux sociaux:
+            </p>
+        </div>
+    </body>
+</html>
